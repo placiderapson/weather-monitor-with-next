@@ -1,5 +1,5 @@
-# REACT-HOOKS-APP (REACT.JS)
-A React web application that implements Hooks. 
+# REACT-HOOKS-APP (NEXT.JS)
+A React web application that implements Hooks for state management. 
 
 ## GETTING STARTED
 
