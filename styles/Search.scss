@@ -1,0 +1,21 @@
+.Search {
+    margin: 3rem 0 0 3rem;
+
+    &__input {
+        border: none;
+        margin-right: 1.5rem;
+        width: 18rem;
+        height: 1.2rem;
+        padding: 1rem;
+        outline: none;
+        border-radius: 0.8rem;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        color: #101240;
+    }
+
+    &__input::placeholder {
+        font-size: 1rem;
+        color: #C1C2C2;
+    }
+}
