@@ -5,5 +5,9 @@
   "main": "index.js",
   "repository": "https://github.com/placideirandora/react-hooks-app",
   "author": "Placide IRANDORA <placideirandora@gmail.com>",
-  "license": "GPLv3"
+  "license": "GPLv3",
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
 }
