@@ -1,0 +1,9 @@
+{
+  "name": "react-hooks-app",
+  "version": "1.0.0",
+  "description": "A React Hooks App",
+  "main": "index.js",
+  "repository": "https://github.com/placideirandora/react-hooks-app",
+  "author": "Placide IRANDORA <placideirandora@gmail.com>",
+  "license": "GPLv3"
+}
