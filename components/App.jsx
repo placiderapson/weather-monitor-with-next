@@ -1,5 +1,6 @@
 import React from 'react';
 import Search from './shared/Search';
+import Title from './shared/Title';
 import '../styles/App.scss';
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
         <div className="App">
            <div className="App__left-section">
                <Search />
+               <Title />
            </div>
            <div className="App__right-section"></div>
         </div>
