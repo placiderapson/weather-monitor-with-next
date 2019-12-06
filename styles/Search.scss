@@ -18,4 +18,16 @@
         font-size: 1rem;
         color: #C1C2C2;
     }
+
+    &__btn {
+        width: 6rem;
+        height: 3rem;
+        padding: 1rem;
+        outline: none;
+        cursor: pointer;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        border-radius: 0.8rem;
+        text-transform: uppercase;
+    }
 }
