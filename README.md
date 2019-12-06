@@ -12,5 +12,5 @@ $ git clone https://github.com/placideirandora/todo-list-app-with-react.js
 ### Install Required Dependencies
 
 ```
-$ npm install
+$ yarn install
 ```
