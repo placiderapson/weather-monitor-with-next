@@ -5,7 +5,10 @@ const Today = () => {
     return(
         <div className="Today">
             <h2 className="Today__title">Today</h2>
-            <p className="Today__date">Sat, 3 Aug</p>
+            <div className="Today__container">
+                <p className="Today__date">Sat, 3 Aug</p>
+                <p className="Today__forecast">Cloudy</p>
+            </div>
         </div>
     );
 };
