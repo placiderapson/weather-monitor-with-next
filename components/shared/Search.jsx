@@ -19,7 +19,7 @@ const Search = () => {
 
     return(
         <div className="Search">
-            <input type="text" placeholder="Search a new place" className="Search__input" onChange={ handleOnChange }/>
+            <input type="text" placeholder="Search a new place. Ex: city, country" className="Search__input" onChange={ handleOnChange }/>
             <button className="Search__btn" onClick={ handleOnClick }>Search</button>
             <p className="Search__message">{ message }</p>
         </div>
