@@ -3,6 +3,7 @@ import Search from './shared/Search';
 import Title from './shared/Title';
 import Location from './shared/Location';
 import Today from './shared/Today';
+import Temperature from './shared/Temperature';
 import '../styles/App.scss';
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
            </div>
            <div className="App__right-section">
                <Today />
+               <Temperature />
            </div>
         </div>
     )
