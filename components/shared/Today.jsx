@@ -10,7 +10,7 @@ const Today = () => {
             <h2 className="Today__title">Today</h2>
             <div className="Today__container">
                 <p className="Today__date">{ context.state.today }</p>
-                <p className="Today__forecast">{ context.state.weatherForecast[0] }</p>
+                <p className="Today__forecast">{ context.state.currentWeatherForecast }</p>
             </div>
         </div>
     );
