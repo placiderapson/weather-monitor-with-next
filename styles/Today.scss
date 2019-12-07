@@ -4,12 +4,24 @@
     margin-top: 10rem;
     letter-spacing: 1px;
 
+    &__container {
+        display: flex;
+        font-size: 0.8rem;
+        margin-left: 7.5rem;
+        color: #C1C2C2;
+        text-transform: uppercase;
+    }
+
     &__title {
         text-transform: uppercase;
     }
 
     &__date {
-        color: #C1C2C2;
-        font-size: 0.8rem;
+        padding-right: 0.5rem;
+        border-right: solid 0.1rem #fff;
+    }
+
+    &__forecast {
+        margin-left: 0.5rem;
     }
 }
