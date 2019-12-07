@@ -1,0 +1,15 @@
+.Today {
+    color: #fff;
+    text-align: center;
+    margin-top: 10rem;
+    letter-spacing: 1px;
+
+    &__title {
+        text-transform: uppercase;
+    }
+
+    &__date {
+        color: #C1C2C2;
+        font-size: 0.8rem;
+    }
+}
