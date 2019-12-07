@@ -9,8 +9,8 @@ const Today = () => {
         <div className="Today">
             <h2 className="Today__title">Today</h2>
             <div className="Today__container">
-                <p className="Today__date">{ context.today }</p>
-                <p className="Today__forecast">{ context.weatherForecast[0] }</p>
+                <p className="Today__date">{ context.state.today }</p>
+                <p className="Today__forecast">{ context.state.weatherForecast[0] }</p>
             </div>
         </div>
     );
