@@ -9,6 +9,12 @@
         width: 13rem;
         height: 13rem;
         margin-right: 3rem;
+        transition: all .2s ease-in-out;
+    }
+
+    &__card:hover {
+        cursor: pointer;
+        transform: scale(1.1);
     }
 
     &__landmark {
