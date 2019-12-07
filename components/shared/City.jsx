@@ -7,7 +7,7 @@ const City = () => {
 
     return(
         <div className="City">
-            <p>{ context.cities[0] }</p>
+            <p>{ context.state.currentCity }</p>
         </div>
     );
 };
