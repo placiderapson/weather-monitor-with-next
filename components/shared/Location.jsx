@@ -11,6 +11,7 @@ const Location = () => {
                 context.dispatch({
                   type: 'CHANGE-LOCATION-AND-WEATHER-FORECAST',
                   city: city,
+                  temperature: context.state.temperature[0],
                   weather: context.state.weatherForecast[0]
                 });
                 break;
@@ -19,6 +20,7 @@ const Location = () => {
                 context.dispatch({
                   type: 'CHANGE-LOCATION-AND-WEATHER-FORECAST',
                   city: city,
+                  temperature: context.state.temperature[1],
                   weather: context.state.weatherForecast[1]
                 });
                 break;
@@ -27,6 +29,7 @@ const Location = () => {
                 context.dispatch({
                   type: 'CHANGE-LOCATION-AND-WEATHER-FORECAST',
                   city: city,
+                  temperature: context.state.temperature[2],
                   weather: context.state.weatherForecast[2]
                 });
                 break;
