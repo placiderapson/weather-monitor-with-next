@@ -2,10 +2,12 @@ import { date } from '../utils/date';
 
 export const initialState = {
     today: date,
+    temperature: [15, 30, 10],
+    currentTemperature: 15,
+    weatherForecast: ['cloudy', 'rainy', 'sunny'],
     currentWeatherForecast: 'cloudy',
-    weatherForecast: ['cloudy', 'sunny', 'rainy'],
-    currentCity: 'Berlin, Germany',
-    cities: ['Berlin, Germany', 'Paris, France', 'New York, USA']
+    cities: ['Berlin, Germany', 'Paris, France', 'New York, USA'],
+    currentCity: 'Berlin, Germany'
 };
 
 export const reducer = (state, action) => {
@@ -14,6 +16,7 @@ export const reducer = (state, action) => {
             return {
                 ...state,
                 currentCity: action.city,
+                currentTemperature: action.temperature,
                 currentWeatherForecast: action.weather
             }
         default:
