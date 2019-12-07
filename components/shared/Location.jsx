@@ -1,13 +1,21 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { AppContext } from '../App';
 import '../../styles/Location.scss';
 
 const Location = () => {
     const context = useContext(AppContext);
 
+    const [ locOneStyle, setLocOneStyle ] = useState('active');
+    const [ locTwoStyle, setLocTwoStyle ] = useState('inactive');
+    const [ locThreeStyle, setLocThreeStyle ] = useState('inactive');
+
     const setCurrentCity = (city) => {
         switch(city){
             case 'Berlin, Germany':
+                setLocOneStyle('active');
+                setLocTwoStyle('inactive');
+                setLocThreeStyle('inactive');
+
                 context.dispatch({
                   type: 'CHANGE-LOCATION-AND-WEATHER-FORECAST',
                   city: city,
@@ -17,6 +25,10 @@ const Location = () => {
                 break;
 
             case 'Paris, France':
+                setLocOneStyle('inactive');
+                setLocTwoStyle('active');
+                setLocThreeStyle('inactive');
+
                 context.dispatch({
                   type: 'CHANGE-LOCATION-AND-WEATHER-FORECAST',
                   city: city,
@@ -26,6 +38,10 @@ const Location = () => {
                 break;
 
             case 'New York, USA':
+                setLocOneStyle('inactive');
+                setLocTwoStyle('inactive');
+                setLocThreeStyle('active');
+                
                 context.dispatch({
                   type: 'CHANGE-LOCATION-AND-WEATHER-FORECAST',
                   city: city,
@@ -43,19 +59,19 @@ const Location = () => {
     return(
         <div className="Location">
             <div className="Location__card" onClick={()=>{setCurrentCity(context.state.cities[0])}}>
-                <div className="Location__landmark-one Location__landmark--active" />
+                <div className={`Location__landmark-one Location__landmark--${locOneStyle}`} />
                 <div className="Location__country-city">
                     <p>{ context.state.cities[0] }</p>
                 </div>
             </div>
             <div className="Location__card" onClick={()=>{setCurrentCity(context.state.cities[1])}}>
-                <div className="Location__landmark-two Location__landmark--inactive" />
+                <div className={`Location__landmark-two Location__landmark--${locTwoStyle}`} />
                 <div className="Location__country-city">
                 <p>{ context.state.cities[1] }</p>
                 </div>
             </div>
             <div className="Location__card" onClick={()=>{setCurrentCity(context.state.cities[2])}}>
-                <div className="Location__landmark-three Location__landmark--inactive" />
+                <div className={`Location__landmark-three Location__landmark--${locThreeStyle}`} />
                 <div className="Location__country-city">
                 <p>{ context.state.cities[2] }</p>
                 </div>
