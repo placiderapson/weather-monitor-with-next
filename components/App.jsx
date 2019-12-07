@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 import Search from './shared/Search';
 import Title from './shared/Title';
 import Location from './shared/Location';
 import Today from './shared/Today';
 import Temperature from './shared/Temperature';
 import City from './shared/City';
-import { AppData } from './data/App';
+import { reducer, initialState } from './data/App';
 import '../styles/App.scss';
 
 export const AppContext = React.createContext();
 
 const App = () => {
+    const [state, dispatch] = useReducer(reducer, initialState);
+
     return(
-        <AppContext.Provider value={AppData}>
+        <AppContext.Provider value={{ state, dispatch }}>
             <div className="App">
                 <div className="App__left-section">
                     <Search />
