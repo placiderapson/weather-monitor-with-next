@@ -6,7 +6,35 @@ const Location = () => {
     const context = useContext(AppContext);
 
     const setCurrentCity = (city) => {
-        context.dispatch({ type: 'CHANGE-LOCATION', payload: city  });
+        switch(city){
+            case 'Berlin, Germany':
+                context.dispatch({
+                  type: 'CHANGE-LOCATION-AND-WEATHER-FORECAST',
+                  city: city,
+                  weather: context.state.weatherForecast[0]
+                });
+                break;
+
+            case 'Paris, France':
+                context.dispatch({
+                  type: 'CHANGE-LOCATION-AND-WEATHER-FORECAST',
+                  city: city,
+                  weather: context.state.weatherForecast[1]
+                });
+                break;
+
+            case 'New York, USA':
+                context.dispatch({
+                  type: 'CHANGE-LOCATION-AND-WEATHER-FORECAST',
+                  city: city,
+                  weather: context.state.weatherForecast[2]
+                });
+                break;
+            
+            default:
+                return null;
+            
+        }
     }
 
     return(
