@@ -2,6 +2,7 @@ import React from 'react';
 import Search from './shared/Search';
 import Title from './shared/Title';
 import Location from './shared/Location';
+import Today from './shared/Today';
 import '../styles/App.scss';
 
 const App = () => {
@@ -12,7 +13,9 @@ const App = () => {
                <Title />
                <Location />
            </div>
-           <div className="App__right-section"></div>
+           <div className="App__right-section">
+               <Today />
+           </div>
         </div>
     )
 }
