@@ -19,6 +19,13 @@ export const reducer = (state, action) => {
         currentTemperature: action.temperature,
         currentWeatherForecast: action.weather
       };
+    case 'UPDATE-LOCATION-AND-WEATHER-FORECAST':
+      return {
+        ...state,
+        currentCity: action.city,
+        currentTemperature: action.temperature,
+        currentWeatherForecast: action.weather
+      };
     default:
       return state;
   }
