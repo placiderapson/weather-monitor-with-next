@@ -1,5 +1,6 @@
 # WEATHER MONITOR (NEXT.JS)
-A front-end web application for providing weather forecast. 
+
+A front-end web application for providing real-time weather forecast.
 
 ## GETTING STARTED
 
