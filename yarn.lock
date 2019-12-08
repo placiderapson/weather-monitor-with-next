@@ -2730,6 +2730,14 @@ gaze@^1.0.0:
   dependencies:
     globule "^1.0.0"
 
+geocoder-free@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/geocoder-free/-/geocoder-free-0.1.0.tgz#837bf4622eee4af40e32fc2a5a1e5a1efc8aa4f6"
+  integrity sha512-VXq7IcOTmzMV+xwSj/eL/DCeGQzDg1xt5iuMdNVg+k1dkAYaI23jajPn8AHBzaZz5+IYF4Km7n9HnUm0Qdopfg==
+  dependencies:
+    node-fetch "2.6.0"
+    ramda "^0.26.1"
+
 get-caller-file@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-1.0.3.tgz#f978fa4c90d1dfe7ff2d6beda2a515e713bdcf4a"
