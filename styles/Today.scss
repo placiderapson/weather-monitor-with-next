@@ -3,11 +3,10 @@
   text-align: center;
   margin-top: 10rem;
   letter-spacing: 1px;
+  width: 100%;
 
   &__container {
-    display: flex;
     font-size: 0.8rem;
-    margin-left: 7.5rem;
     color: #c1c2c2;
     text-transform: uppercase;
   }
@@ -16,12 +15,10 @@
     text-transform: uppercase;
   }
 
-  &__date {
-    padding-right: 0.5rem;
-    border-right: solid 0.1rem #fff;
-  }
+  &__date {}
 
   &__forecast {
-    margin-left: 0.5rem;
+    color: #80bdf2;
+    font-weight: bolder;
   }
 }
