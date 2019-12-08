@@ -11,7 +11,7 @@ const Location = () => {
 
     const setCurrentCity = (city) => {
         switch(city){
-            case 'Berlin, Germany':
+            case 'berlin, germany':
                 setLocOneStyle('active');
                 setLocTwoStyle('inactive');
                 setLocThreeStyle('inactive');
@@ -24,7 +24,7 @@ const Location = () => {
                 });
                 break;
 
-            case 'Paris, France':
+            case 'paris, france':
                 setLocOneStyle('inactive');
                 setLocTwoStyle('active');
                 setLocThreeStyle('inactive');
@@ -37,7 +37,7 @@ const Location = () => {
                 });
                 break;
 
-            case 'New York, USA':
+            case 'new york, usa':
                 setLocOneStyle('inactive');
                 setLocTwoStyle('inactive');
                 setLocThreeStyle('active');
