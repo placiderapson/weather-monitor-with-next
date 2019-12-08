@@ -1,5 +1,8 @@
 import React, { useState, useContext } from 'react';
+import { GetLatLngByAddress } from 'geocoder-free';
+import axios from 'axios';
 import { AppContext } from '../App';
+import { WEATHER_API_KEY, WEATHER_API_ENDPOINT } from '../../env';
 import '../../styles/Search.scss';
 
 const Search = () => {
@@ -15,22 +18,31 @@ const Search = () => {
 
   const handleOnClick = e => {
     e.preventDefault();
-    let city;
+
     location.trim()
-      ? (city = context.state.cities.filter(
-          city => city === location.toLowerCase()
-        ))
-      : null;
-    location.trim()
-      ? city.length
-        ? setStyle('Search__success-message') &
-          setMessage(
-            `Weather Forecast Found. Click On ${city[0].toUpperCase()} Below`
-          )
-        : setStyle('Search__error-message') &
-          setMessage(
-            `Weather Forecast For ${location.toUpperCase()} Could Not Be Found`
-          )
+      ? GetLatLngByAddress(location).then(res => {
+          !res.length
+            ? setStyle('Search__error-message') &
+              setMessage(
+                `Weather Forecast For ${location.toUpperCase()} Could Not Be Found`
+              )
+            : axios({
+                method: 'GET',
+                url: `${WEATHER_API_ENDPOINT}${WEATHER_API_KEY}${res[0]},${res[1]}`
+              })
+                .then(res => {
+                  setStyle('Search__success-message') &
+                    setMessage(
+                      `Weather Forecast For ${location.toUpperCase()} Has Been Found`
+                    );
+                  console.log(
+                    `Temperature: ${res.data.currently.temperature}. Weather: ${res.data.currently.summary}`
+                  );
+                })
+                .catch(err => {
+                  console.log(err.message);
+                });
+        })
       : null;
 
     location.trim()
