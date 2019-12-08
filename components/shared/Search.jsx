@@ -52,7 +52,7 @@ const Search = () => {
     location.trim()
       ? setTimeout(() => {
           setMessage('');
-        }, 5000)
+        }, 10000)
       : null;
   };
 
