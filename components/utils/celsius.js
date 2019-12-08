@@ -1,0 +1,1 @@
+export const toCelsius = fahrenheit => Math.floor((fahrenheit - 32) * (5/9))
