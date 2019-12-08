@@ -44,7 +44,10 @@ const Search = () => {
                   });
                 })
                 .catch(err => {
-                  console.log(err.message);
+                  setStyle('Search__error-message') &
+                    setMessage(
+                      `Weather Forecast For ${location.toUpperCase()} Could Not Be Found. ${err.message}`
+              )
                 });
         })
       : null;
