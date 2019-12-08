@@ -3,6 +3,7 @@ import { GetLatLngByAddress } from 'geocoder-free';
 import axios from 'axios';
 import { AppContext } from '../App';
 import { WEATHER_API_KEY, WEATHER_API_ENDPOINT } from '../../env';
+import { toCelsius } from '../utils/celsius';
 import '../../styles/Search.scss';
 
 const Search = () => {
@@ -33,10 +34,14 @@ const Search = () => {
                 .then(res => {
                   setStyle('Search__success-message') &
                     setMessage(
-                      `Weather Forecast For ${location.toUpperCase()} Has Been Found`
+                      `Weather Forecast For ${location.toUpperCase()} Has Been Found:`
                     );
                   console.log(
-                    `Temperature: ${res.data.currently.temperature}. Weather: ${res.data.currently.summary}`
+                    `Temperature: ${toCelsius(
+                      res.data.currently.temperature
+                    )}. Weather: ${res.data.currently.summary}. Icon: ${
+                      res.data.currently.icon
+                    }`
                   );
                 })
                 .catch(err => {
