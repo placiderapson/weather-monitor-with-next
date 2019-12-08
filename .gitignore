@@ -2,3 +2,4 @@ node_modules
 .next
 .DS_Store
 styles/.DS_Store
+env.js
