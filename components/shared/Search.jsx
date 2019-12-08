@@ -34,15 +34,14 @@ const Search = () => {
                 .then(res => {
                   setStyle('Search__success-message') &
                     setMessage(
-                      `Weather Forecast For ${location.toUpperCase()} Has Been Found:`
+                      `Weather Forecast For ${location.toUpperCase()} Has Been Found`
                     );
-                  console.log(
-                    `Temperature: ${toCelsius(
-                      res.data.currently.temperature
-                    )}. Weather: ${res.data.currently.summary}. Icon: ${
-                      res.data.currently.icon
-                    }`
-                  );
+                  context.dispatch({
+                    type: 'UPDATE-LOCATION-AND-WEATHER-FORECAST',
+                    city: location,
+                    temperature: toCelsius(res.data.currently.temperature),
+                    weather: res.data.currently.summary
+                  });
                 })
                 .catch(err => {
                   console.log(err.message);
