@@ -33,7 +33,11 @@
         color: #101240;
     }
 
-    &__message {
+    &__success-message {
+        color: #3BA161;
+    }
+
+    &__error-message {
         color: #F23005;
     }
 }
