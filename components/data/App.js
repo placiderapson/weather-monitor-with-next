@@ -6,8 +6,8 @@ export const initialState = {
     currentTemperature: 15,
     weatherForecast: ['cloudy', 'rainy', 'sunny'],
     currentWeatherForecast: 'cloudy',
-    cities: ['Berlin, Germany', 'Paris, France', 'New York, USA'],
-    currentCity: 'Berlin, Germany'
+    cities: ['berlin, germany', 'paris, france', 'new york, usa'],
+    currentCity: 'berlin, germany'
 };
 
 export const reducer = (state, action) => {
