@@ -1,16 +1,16 @@
 .Title {
-    margin: 2rem 0 0 3.2rem;
-    display: flex;
-    color: #101240;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+  margin: 2rem 0 0 3.2rem;
+  display: flex;
+  color: #101240;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 
-    &__first-word {
-        margin-right: 1rem;
-    }
+  &__first-word {
+    margin-right: 1rem;
+  }
 
-    &__second-word {
-        font-weight: bolder;
-    }
+  &__second-word {
+    font-weight: bolder;
+  }
 }

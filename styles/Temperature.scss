@@ -1,16 +1,16 @@
 .Temperature {
-    display: flex;
-    margin-left: 9rem;
-    letter-spacing: 1px;
+  display: flex;
+  margin-left: 9rem;
+  letter-spacing: 1px;
 
-    &__value {
-        font-size: 4rem;
-        color: #fff;
-    }
+  &__value {
+    font-size: 4rem;
+    color: #fff;
+  }
 
-    &__unit {
-        margin-top: 4.7rem;
-        font-size: 2.3rem;
-        color:  #C1C2C2;
-    }
+  &__unit {
+    margin-top: 4.7rem;
+    font-size: 2.3rem;
+    color: #c1c2c2;
+  }
 }

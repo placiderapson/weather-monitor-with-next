@@ -1,43 +1,43 @@
 .Search {
-    margin: 3rem 0 0 3rem;
+  margin: 3rem 0 0 3rem;
 
-    &__input {
-        border: none;
-        margin-right: 1rem;
-        width: 18rem;
-        height: 1.2rem;
-        padding: 1rem;
-        outline: none;
-        border-radius: 0.8rem;
-        font-size: 0.8rem;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: #101240;
-    }
+  &__input {
+    border: none;
+    margin-right: 1rem;
+    width: 18rem;
+    height: 1.2rem;
+    padding: 1rem;
+    outline: none;
+    border-radius: 0.8rem;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #101240;
+  }
 
-    &__input::placeholder {
-        font-size: 0.7rem;
-        color: #C1C2C2;
-    }
+  &__input::placeholder {
+    font-size: 0.7rem;
+    color: #c1c2c2;
+  }
 
-    &__btn {
-        width: 6rem;
-        height: 3rem;
-        padding: 1rem;
-        outline: none;
-        cursor: pointer;
-        font-size: 0.8rem;
-        letter-spacing: 1px;
-        border-radius: 0.8rem;
-        text-transform: uppercase;
-        color: #101240;
-    }
+  &__btn {
+    width: 6rem;
+    height: 3rem;
+    padding: 1rem;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    border-radius: 0.8rem;
+    text-transform: uppercase;
+    color: #101240;
+  }
 
-    &__success-message {
-        color: #3BA161;
-    }
+  &__success-message {
+    color: #3ba161;
+  }
 
-    &__error-message {
-        color: #F23005;
-    }
+  &__error-message {
+    color: #f23005;
+  }
 }

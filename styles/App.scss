@@ -1,22 +1,22 @@
 .App {
-    max-width: 75rem;
-    max-height: 40rem;
-    margin: 6rem 2rem 2rem 7rem;
-    display: flex;
+  max-width: 75rem;
+  max-height: 40rem;
+  margin: 6rem 2rem 2rem 7rem;
+  display: flex;
 
-    &__left-section {
-        background: #E9F0F2;
-        width: 50rem;
-        height: 40rem;
-        border-top-left-radius: 30px;
-        border-bottom-left-radius: 30px;
-    }
+  &__left-section {
+    background: #e9f0f2;
+    width: 50rem;
+    height: 40rem;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
 
-    &__right-section {
-        background: #101240;
-        width: 25rem;
-        height: 40rem;
-        border-top-right-radius: 30px;
-        border-bottom-right-radius: 30px;
-    }
+  &__right-section {
+    background: #101240;
+    width: 25rem;
+    height: 40rem;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
 }

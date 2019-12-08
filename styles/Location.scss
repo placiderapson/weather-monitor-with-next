@@ -1,47 +1,47 @@
 .Location {
-    display: flex;
-    margin: 3rem 0 0 3rem;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+  display: flex;
+  margin: 3rem 0 0 3rem;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 
-    &__card {
-        width: 13rem;
-        height: 13rem;
-        margin-right: 3rem;
-        transition: all .2s ease-in-out;
+  &__card {
+    width: 13rem;
+    height: 13rem;
+    margin-right: 3rem;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &__card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  &__landmark {
+    &--active {
+      width: 10rem;
+      height: 13rem;
+      border-radius: 1rem;
+      background-size: cover;
     }
 
-    &__card:hover {
-        cursor: pointer;
-        transform: scale(1.1);
+    &--inactive {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 1rem;
+      background-size: cover;
     }
 
-    &__landmark {
-        &--active {
-            width: 10rem;
-            height: 13rem;
-            border-radius: 1rem;
-            background-size: cover;
-        }
-
-        &--inactive {
-            width: 10rem;
-            height: 10rem;
-            border-radius: 1rem;
-            background-size: cover;
-        }
-    
-        &-one {
-            background-image: url('../public/berlin-1.jpg');
-        }
-    
-        &-two {
-            background-image: url('../public/paris-1.jpg');
-        }
-    
-        &-three {
-            background-image: url('../public/new-york-3.jpg');
-        }
+    &-one {
+      background-image: url('../public/berlin-1.jpg');
     }
+
+    &-two {
+      background-image: url('../public/paris-1.jpg');
+    }
+
+    &-three {
+      background-image: url('../public/new-york-3.jpg');
+    }
+  }
 }

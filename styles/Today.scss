@@ -1,27 +1,27 @@
 .Today {
-    color: #fff;
-    text-align: center;
-    margin-top: 10rem;
-    letter-spacing: 1px;
+  color: #fff;
+  text-align: center;
+  margin-top: 10rem;
+  letter-spacing: 1px;
 
-    &__container {
-        display: flex;
-        font-size: 0.8rem;
-        margin-left: 7.5rem;
-        color: #C1C2C2;
-        text-transform: uppercase;
-    }
+  &__container {
+    display: flex;
+    font-size: 0.8rem;
+    margin-left: 7.5rem;
+    color: #c1c2c2;
+    text-transform: uppercase;
+  }
 
-    &__title {
-        text-transform: uppercase;
-    }
+  &__title {
+    text-transform: uppercase;
+  }
 
-    &__date {
-        padding-right: 0.5rem;
-        border-right: solid 0.1rem #fff;
-    }
+  &__date {
+    padding-right: 0.5rem;
+    border-right: solid 0.1rem #fff;
+  }
 
-    &__forecast {
-        margin-left: 0.5rem;
-    }
+  &__forecast {
+    margin-left: 0.5rem;
+  }
 }

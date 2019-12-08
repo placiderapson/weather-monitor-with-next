@@ -11,24 +11,24 @@ import '../styles/App.scss';
 export const AppContext = React.createContext();
 
 const App = () => {
-    const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, initialState);
 
-    return(
-        <AppContext.Provider value={{ state, dispatch }}>
-            <div className="App">
-                <div className="App__left-section">
-                    <Search />
-                    <Title />
-                    <Location />
-                </div>
-                <div className="App__right-section">
-                    <Today />
-                    <Temperature />
-                    <City />
-                </div>
-            </div>
-        </AppContext.Provider>
-    );
+  return (
+    <AppContext.Provider value={{ state, dispatch }}>
+      <div className="App">
+        <div className="App__left-section">
+          <Search />
+          <Title />
+          <Location />
+        </div>
+        <div className="App__right-section">
+          <Today />
+          <Temperature />
+          <City />
+        </div>
+      </div>
+    </AppContext.Provider>
+  );
 };
 
 export default App;
