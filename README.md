@@ -13,5 +13,5 @@ $ git clone https://github.com/placideirandora/weather-monitor-with-next.js
 ### Install Required Dependencies
 
 ```
-$ yarn install
+$ npm install
 ```
