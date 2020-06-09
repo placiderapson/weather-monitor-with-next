@@ -7,7 +7,7 @@ A front-end web application for providing real-time weather forecast.
 ### Clone The Project
 
 ```
-$ git clone https://github.com/placideirandora/weather-monitor-with-next.js
+$ git clone https://github.com/placiderapson/weather-monitor-with-next.js
 ```
 
 ### Install Required Dependencies
