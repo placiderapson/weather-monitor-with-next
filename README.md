@@ -1,4 +1,4 @@
-# WEATHER MONITOR (NEXT.JS)
+# WEATHER MONITOR (NEXT)
 
 A front-end web application for providing real-time weather forecast.
 
@@ -7,7 +7,7 @@ A front-end web application for providing real-time weather forecast.
 ### Clone The Project
 
 ```
-$ git clone https://github.com/placiderapson/weather-monitor-with-next.js
+$ git clone https://github.com/placiderapson/weather-monitor-with-next
 ```
 
 ### Install Required Dependencies
