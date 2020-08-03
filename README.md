@@ -15,3 +15,9 @@ $ git clone https://github.com/placiderapson/weather-monitor-with-next
 ```
 $ npm install
 ```
+
+### Expose Environment Variables
+
+```
+# rename the file 'env.example.js' to 'env.js' and provide your credentials
+```
