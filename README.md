@@ -21,3 +21,9 @@ $ npm install
 ```
 # rename the file 'env.example.js' to 'env.js' and provide your credentials
 ```
+
+### Start The Server
+
+```
+$ npm run dev
+```
